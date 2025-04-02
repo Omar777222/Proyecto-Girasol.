@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Girasol</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>El Crecimiento de mi Girasol</h1>
+    </header>
+    
+    <section class="content">
+        <p>Bienvenido a mi proyecto donde documento el proceso de crecimiento de mi girasol desde el primer día hasta los dos meses.</p>
+        
+        <h2>Paso a Paso</h2>
+        <ol>
+            <li><strong>Día 1:</strong> Preparación de la maceta y siembra de la semilla.</li>
+            <li><strong>Día 15:</strong> Primeros brotes visibles.</li>
+            <li><strong>Día 30:</strong> El tallo comienza a fortalecerse.</li>
+            <li><strong>Día 60:</strong> Girasol completamente desarrollado.</li>
+        </ol>
+        
+        <h2>Galería de Imágenes</h2>
+        <div class="image-gallery">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/40/Sunflower_sky_backdrop.jpg" alt="Girasol de referencia">
+            <img src="{{ url_for('static', filename='images/dia1.jpg') }}" alt="Día 1 - Siembra">
+            <img src="{{ url_for('static', filename='images/dia30.jpg') }}" alt="Día 30 - Crecimiento">
+            <img src="{{ url_for('static', filename='images/dia60.jpg') }}" alt="Día 60 - Floración">
+        </div>
+
+        <h2>Recursos Necesarios</h2>
+        <h3>Área y Espacio</h3>
+        <ul>
+            <li>Lugar con luz solar (6-8 horas diarias).</li>
+            <li>Suelo fértil con buen drenaje.</li>
+            <li>Espacio de 30 cm entre plantas.</li>
+        </ul>
+
+        <h3>Materiales</h3>
+        <ul>
+            <li>Semillas de girasol.</li>
+            <li>Sustrato o tierra rica en nutrientes.</li>
+            <li>Maceta o terreno adecuado.</li>
+            <li>Regadera o sistema de riego.</li>
+            <li>Fertilizante natural o compost.</li>
+        </ul>
+
+        <h3>Costos Aproximados</h3>
+        <ul>
+            <li>Semillas: $20 - $100 MXN</li>
+            <li>Sustrato: $50 - $200 MXN</li>
+            <li>Maceta/Terreno: $50 - $300 MXN</li>
+            <li>Regadera/Riego: $100 - $500 MXN</li>
+            <li>Fertilizante: $50 - $200 MXN</li>
+        </ul>
+        <p>Total Aproximado: $270 - $1,300 MXN</p>
+
+        <h3>Tiempo Requerido</h3>
+        <ul>
+            <li>Germinación: 7 - 10 días.</li>
+            <li>Crecimiento: 8 - 12 semanas.</li>
+            <li>Floración: Aproximadamente 3 meses después de la siembra.</li>
+        </ul>
+    </section>
+</body>
+</html>
